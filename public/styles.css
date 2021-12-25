@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+body {
+  background-color: #0a7407;
+  margin: 0px;
+}
+
+h1 {
+  font-family: "Press Start 2P", cursive;
+  color: #fb7800;
+  font-weight: 100;
+  font-size: 35px;
+  text-align: center;
+  margin: 60px 0 0 0;
+}
+
+#underscore {
+  animation: blinker 0.7s linear infinite;
+}
+
+@keyframes blinker {
+  1% {
+    opacity: 0;
+  }
+}
+
+button {
+  font-family: "Press Start 2P", cursive;
+  font-weight: 300;
+  font-size: 15px;
+  color: #fb7800;
+  background-color: #1f2821;
+  padding: 10px 20px 10px 20px;
+  border: solid #1f2821;
+}
+
+button:hover {
+  background-color: rgb(0, 0, 0);
+  border: solid rgb(5, 37, 6);
+}
+
+.start-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.quiz-wrapper {
+  background-color: rgb(0, 0, 0);
+  margin: 0px 150px 20px 150px;
+}
+
+#question {
+  font-family: "Space Mono", monospace;
+  font-weight: 2px;
+  font-size: 17px;
+  color: #fb7800;
+  margin: 10px 20px 10px 20px;
+  padding: 10px 10px 10px 10px;
+  text-align: justify;
+}
+
+.answers-wrapper {
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+li {
+  font-family: "Space Mono", monospace;
+  color: #fb7800;
+  font-size: 17px;
+  font-weight: 2px;
+  padding: 10 20 10 20;
+  background-color: #1f2821;
+  padding: 10px;
+  align-content: space-between;
+  margin: 20px 35px 20px 0px;
+  list-style-type: none;
+  text-align: justify;
+  border: solid black;
+}
+
+li:hover {
+  background-color: rgb(0, 0, 0);
+  border: solid #1f2821;
+}
+
+ul {
+  margin-top: 0px;
+}
+
+footer {
+  padding: 2px 5px 0px 5px;
+  margin: 0px 0px 0px 0px;
+  border-top: solid rgba(23, 24, 23, 0.295);
+  border-width: 1px;
+}
+
+#footer-info {
+  font-size: 14px;
+  font-weight: 23px;
+  color: black;
+  font-family: "Space Mono", monospace;
+  margin-bottom: 5px 10px 10px 10px;
+}
+
+img {
+  top: 0px;
+  right: 0;
+  width: 120px;
+  position: fixed;
+}
