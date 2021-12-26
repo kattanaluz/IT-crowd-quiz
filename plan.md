@@ -11,15 +11,14 @@ MY GOAL: build up a trivia quiz about IT Crowd. I want to display a question at 
 
 ### Front-end
 
-#### WEB PAGE
-
 - Create a basic HTML file ✔️
 - Create a CSS file ✔️
 - Link the css with the html file ✔️
-- Create a <h1> tag to display "The IT Crowd Trivia Quiz" ✔️
+- Create a h1 tag to display "The IT Crowd Trivia Quiz" ✔️
 - Create a button to start the game ✔️
-
-#### JavaScript
+- Create a list to display the questions and answers ✔️
+- Create the project style using figma ✔️
+- Apply the project style to the webpage using css ✔️
 
 <br>
 <hr />
@@ -28,9 +27,7 @@ MY GOAL: build up a trivia quiz about IT Crowd. I want to display a question at 
 
 ### Back-end
 
-#### CREATE A SERVER
-
-### Install needed app
+### Step 1: install needed apps
 
 - create a package.json ✔️
 - install express ✔️
@@ -39,11 +36,27 @@ MY GOAL: build up a trivia quiz about IT Crowd. I want to display a question at 
 - create a gitignore file and add n0de_modules ✔️
 - set up the script on the package.json to run nodemon ✔️
 
-### Set up the server
+### Step 2: create and set up the server
 
-- import app from express ✔️
+- create a file app and import app from express ✔️
 - save express in a variable app ✔️
 - set up the server port ✔️
 - set up the the handler request to receive a get request from the path "/" and send back a message "Hello World" ✔️
 - now that the server is running, set up the get request handler to return the html file when a get request is received by the server ✔️
+
+### Step 3: create and set up the database
+
+- install pg ✔️
+- create a file database and import pg ✔️
+- create a database on Heroku ✔️
+- set up the database credentials ✔️
+- export the query function ✔️
+- create a new file to the logic models to interact with the database (SQL statements) ✔️
+- create a query statement to create a table (question 1, answer 1, answer 2, answer 3, answer 4) ✔️
+- create a query statement to populate the table ✔️
+- create a query statement to retrieve the all the table ✔️
+- create a query statement to retrieve just one question and its answers ✔️
+
+### Step 4: set up the API
+
 - set the get request handler to display the first question when the button is pressed

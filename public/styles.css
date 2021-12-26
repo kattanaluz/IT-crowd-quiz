@@ -13,6 +13,8 @@ h1 {
   font-size: 35px;
   text-align: center;
   margin: 60px 0 0 0;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: rgb(32, 32, 32);
 }
 
 #underscore {
@@ -49,16 +51,16 @@ button:hover {
 
 .quiz-wrapper {
   background-color: rgb(0, 0, 0);
-  margin: 0px 150px 20px 150px;
+  margin: 0px 180px 20px 180px;
 }
 
 #question {
   font-family: "Space Mono", monospace;
-  font-weight: 2px;
-  font-size: 17px;
+  font-weight: 1px;
+  font-size: 16px;
   color: #fb7800;
   margin: 10px 20px 10px 20px;
-  padding: 10px 10px 10px 10px;
+  padding: 25px 10px 10px 10px;
   text-align: justify;
 }
 
@@ -70,8 +72,8 @@ button:hover {
 li {
   font-family: "Space Mono", monospace;
   color: #fb7800;
-  font-size: 17px;
-  font-weight: 2px;
+  font-size: 16px;
+  font-weight: 1px;
   padding: 10 20 10 20;
   background-color: #1f2821;
   padding: 10px;
@@ -109,6 +111,6 @@ footer {
 img {
   top: 0px;
   right: 0;
-  width: 120px;
+  width: 160px;
   position: fixed;
 }

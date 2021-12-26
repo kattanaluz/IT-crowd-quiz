@@ -1,4 +1,10 @@
 import express from "express";
+import {
+  getQuestion,
+  createTable,
+  populateTable,
+  getAllTable,
+} from "./database/models.js";
 
 const app = express();
 
@@ -14,4 +20,8 @@ app.listen(PORT, () =>
 
 app.get("/", (req, res) => {
   res.sendFile("index");
+});
+
+app.post("/", async (req, res) => {
+  const result = createTable(req.body);
 });

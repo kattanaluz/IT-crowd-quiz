@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon -r dotenv/config app.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,8 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.1"
   }
 }
