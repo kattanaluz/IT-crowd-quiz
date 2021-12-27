@@ -2,8 +2,8 @@ import express from "express";
 import {
   getQuestion,
   createTable,
-  populateTable,
   getAllTable,
+  populateTable,
 } from "./database/models.js";
 
 const app = express();
@@ -18,10 +18,37 @@ app.listen(PORT, () =>
   console.log(`The server is listening to the port ${PORT}`)
 );
 
-app.get("/", (req, res) => {
-  res.sendFile("index");
+//* POST REQUESTS
+//* create table
+app.post("/create", async (req, res) => {
+  const result = await createTable(req.body);
+  res.json({ success: true, payload: result });
 });
 
-app.post("/", async (req, res) => {
-  const result = createTable(req.body);
+//* add content to the table
+app.post("/populate", async (req, res) => {
+  const result = await populateTable(req.body);
+  console.log(result);
+  res.json(result.rows);
+});
+
+//* GET REQUESTS
+//* get the html page
+/* app.get("/", (req, res) => {
+  res.sendFile("index.html");
+}); */
+
+//*get all the table
+app.get("/questions", async (req, res, next) => {
+  const result = await getAllTable();
+  console.log(result.rows);
+  res.json({ content: result.rows });
+  next();
+});
+
+//* get one question
+app.get("/questions/:id", async (req, res) => {
+  const result = await getQuestion(Number(req.params.id));
+  console.log(result);
+  res.json({ "This is just one question": result });
 });

@@ -9,25 +9,31 @@ export async function createTable() {
   console.log(result);
   return result;
 }
-createTable();
 
 //* populate table
-export async function populateTable() {
+export async function populateTable(content) {
   const result = await query(
-    `INSERT INTO questions (question, answer1, answer2, answer3, answer4) VALUES () RETURNING*;`
+    `INSERT INTO questions (question, answer1, answer2, answer3, answer4) VALUES ($1, $2, $3, $4, $5) RETURNING*;`,
+    [
+      content.question,
+      content.answer1,
+      content.answer2,
+      content.answer3,
+      content.answer4,
+    ]
   );
-  console.log(result);
   return result;
 }
 
 //* retrieve all table
 export async function getAllTable() {
   const result = await query(`SELECT * FROM questions;`);
-  return result.rows;
+  return result;
 }
 
 //* retrieve one question
 export async function getQuestion(id) {
-  const result = await query(`SELECT * FROM questions WHERE ID = $1;`[id]);
-  return result.rows;
+  const result = await query(`SELECT * FROM questions WHERE id = ${id};`);
+  console.log(result.rows);
+  return result;
 }

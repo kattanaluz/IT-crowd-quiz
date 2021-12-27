@@ -8,12 +8,12 @@ body {
 
 h1 {
   font-family: "Press Start 2P", cursive;
-  color: #fb7800;
-  font-weight: 100;
-  font-size: 35px;
+  color: #e67103;
+  font-weight: 400;
+  font-size: 40px;
   text-align: center;
   margin: 60px 0 0 0;
-  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-width: 0.8px;
   -webkit-text-stroke-color: rgb(32, 32, 32);
 }
 
@@ -29,7 +29,7 @@ h1 {
 
 button {
   font-family: "Press Start 2P", cursive;
-  font-weight: 300;
+  font-weight: 100;
   font-size: 15px;
   color: #fb7800;
   background-color: #1f2821;
@@ -113,4 +113,11 @@ img {
   right: 0;
   width: 160px;
   position: fixed;
+}
+
+.quiz-wrapper {
+  display: none;
+}
+footer {
+  display: none;
 }
