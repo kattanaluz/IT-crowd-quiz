@@ -28,7 +28,6 @@ app.post("/create", async (req, res) => {
 //* add content to the table
 app.post("/populate", async (req, res) => {
   const result = await populateTable(req.body);
-  console.log(result);
   res.json(result.rows);
 });
 
@@ -49,6 +48,5 @@ app.get("/questions", async (req, res, next) => {
 //* get one question
 app.get("/questions/:id", async (req, res) => {
   const result = await getQuestion(Number(req.params.id));
-  console.log(result);
   res.json({ "This is just one question": result });
 });

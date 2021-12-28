@@ -6,7 +6,6 @@ export async function createTable() {
   const result = await query(
     `CREATE TABLE IF NOT EXISTS questions (id SERIAL PRIMARY KEY, question TEXT, answer1 TEXT, answer2 TEXT, answer3 TEXT, answer4 TEXT);`
   );
-  console.log(result);
   return result;
 }
 
