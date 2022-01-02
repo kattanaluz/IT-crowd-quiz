@@ -33,6 +33,5 @@ export async function getAllTable() {
 //* retrieve one question
 export async function getQuestion(id) {
   const result = await query(`SELECT * FROM questions WHERE id = ${id};`);
-  console.log(result.rows);
   return result;
 }

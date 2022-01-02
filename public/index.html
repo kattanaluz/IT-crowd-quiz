@@ -10,154 +10,166 @@
   <body>
     <a><img src="./images/it.png" /></a>
     <h1>The IT Crowd Trivia Quiz<span id="underscore">_</span></h1>
-    <div class="start-button"><button>press to start</button></div>
-
+    <div class="start-button-wrapper"><button id="start-button">press to start</button></div>
     <div class="quiz-wrapper">
-
-    <div class="question-wrapper">
       <div class="question-wrapper">
-        <p class="questions" id="question1"></p>
+      <div class="question-wrapper">
+        <p class="questions" id="question1">Which operating system is the bomb robot running?</p>
       </div>
       <div class="answers-wrapper">
-        <ul>
-          <li id="q1-answer1"></li>
-          <li id="q1-answer2"></li>
-          <li id="q1-answer3"></li>
-          <li id="q1-answer4"></li>
-        </ul>
+          <input type="radio" class="answers" name="question1" id="q1-answer1" value="incorrect"></input>
+          <label for="q1-answer1" id="label-q1-answer1">Linux</label>
+          <input type="radio" class="answers" name="question1" id="q1-answer2" value="correct"></input> 
+          <label for="q1-answer2" id="label-q1-answer2">Vista</label>
+          <input type="radio" class="answers" name="question1" id="q1-answer3" value="incorrect"></input>
+          <label for="q1-answer3" id="label-q1-answer3">Snow Leopard</label>
+          <input type="radio" class="answers" name="question1" id="q1-answer4" value="incorrect"></input>
+          <label for="q1-answer4" id="label-q1-answer4">MS-DOS</label>
       </div>
     </div>
-
     <div class="question-wrapper">
       <div class="question-wrapper">
-        <p class="questions" id="question2">1</p>
+        <p class="questions" id="question2">What happened when Moss and Roy were drunk in Amsterdam?</p>
       </div>
       <div class="answers-wrapper">
-        <ul>
-          <li id="q2-answer1"></li>
-          <li id="q2-answer2"></li>
-          <li id="q2-answer3"></li>
-          <li id="q2-answer4"></li>
-        </ul>
+        <input type="radio" class="answers" name="question2" id="q2-answer1" value="incorrect"></input>
+        <label for="q2-answer1" id="label-q2-answer1">Moss and Roy hired some prostitutes</label>
+        <input type="radio" class="answers" name="question2" id="q2-answer2" value="incorrect"></input> 
+        <label for="q2-answer2" id="label-q2-answer2">Moss lost his glasses</label>
+        <input type="radio" class="answers" name="question2" id="q2-answer3" value="incorrect"></input>
+        <label for="q2-answer3" id="label-q2-answer3">Moss and Roy took Brandy and Chrystal to a fair</label>
+        <input type="radio" class="answers" name="question2" id="q2-answer4" value="correct"></input>
+        <label for="q2-answer4" id="label-q2-answer4">All of the above</label>
       </div>
     </div>
-
     <div class="question-wrapper">
       <div class="question-wrapper">
-        <p class="questions" id="question3"></p>
+        <p class="questions" id="question3">What is Denholm declaring war on?</p>
       </div>
       <div class="answers-wrapper">
-        <ul>
-          <li id="q3-answer1"></li>
-          <li id="q3-answer2"></li>
-          <li id="q3-answer3"></li>
-          <li id="q3-answer4"></li>
-        </ul>
+        <input type="radio" class="answers" name="question3" id="q3-answer1" value="incorrect"></input>
+        <label for="q3-answer1" id="label-q3-answer1">The IT department</label>
+        <input type="radio" class="answers" name="question3" id="q3-answer2" value="incorrect"></input> 
+        <label for="q3-answer2" id="label-q3-answer2">His carbon footprint</label>
+        <input type="radio" class="answers" name="question3" id="q3-answer3" value="correct"></input>
+        <label for="q3-answer3" id="label-q3-answer3">Stress</label>
+        <input type="radio" class="answers" name="question3" id="q3-answer4" value="incorrect"></input>
+        <label for="q3-answer4" id="label-q3-answer4">His son Douglas</label>
       </div>
     </div>
-
     <div class="question-wrapper">
       <div class="question-wrapper">
-        <p class="questions" id="question4"></p>
+        <p class="questions" id="question4">What's the name of Jen's dinner party date?</p>
       </div>
       <div class="answers-wrapper">
-        <ul>
-          <li id="q4-answer1"></li>
-          <li id="q4-answer2"></li>
-          <li id="q4-answer3"></li>
-          <li id="q4-answer4"></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="question-wrapper">
-      <div class="question-wrapper">
-        <p class="questions" id="question5"></p>
-      </div>
-      <div class="answers-wrapper">
-        <ul>
-          <li id="q5-answer1"></li>
-          <li id="q5-answer2"></li>
-          <li id="q5-answer3"></li>
-          <li id="q5-answer4"></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="question-wrapper">
-      <div class="question-wrapper">
-        <p class="questions" id="question6"></p>
-      </div>
-      <div class="answers-wrapper">
-        <ul>
-          <li id="q6-answer1"></li>
-          <li id="q6-answer2"></li>
-          <li id="q6-answer3"></li>
-          <li id="q6-answer4"></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="question-wrapper">
-      <div class="question-wrapper">
-        <p class="questions" id="question7"></p>
-      </div>
-      <div class="answers-wrapper">
-        <ul>
-          <li id="q7-answer1"></li>
-          <li id="q7-answer2"></li>
-          <li id="q7-answer3"></li>
-          <li id="q7-answer4"></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="question-wrapper">
-      <div class="question-wrapper">
-        <p class="questions" id="question8">1</p>
-      </div>
-      <div class="answers-wrapper">
-        <ul>
-          <li id="q8-answer1">1</li>
-          <li id="q8-answer2">2</li>
-          <li id="q8-answer3">3</li>
-          <li id="q8-answer4">4</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="question-wrapper">
-      <div class="question-wrapper">
-        <p class="questions" id="question9"></p>
-      </div>
-
-      <div class="answers-wrapper">
-        <ul>
-          <li id="q9-answer1"></li>
-          <li id="q9-answer2"></li>
-          <li id="q9-answer3"></li>
-          <li id="q9-answer4"></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="question-wrapper">
-      <div class="question-wrapper">
-        <p class="questions" id="question10"></p>
-      </div>
-      <div class="answers-wrapper">
-        <ul>
-          <li id="q10-answer1">1</li>
-          <li id="q10-answer2">2</li>
-          <li id="q10-answer3">3</li>
-          <li id="q10-answer4">4</li>
-        </ul>
-      </div>
-    </div>
+          <input type="radio" class="answers" name="question4" id="q4-answer1" value="incorrect"></input>
+          <label for="q4-answer1" id="label-q4-answer1">Wayne Kerr</label>
+          <input type="radio" class="answers" name="question4" id="q4-answer2" value="incorrect"></input> 
+          <label for="q4-answer2" id="label-q4-answer2">Mike Huntertz</label>
+          <input type="radio" class="answers" name="question4" id="q4-answer3" value="correct"></input>
+          <label for="q4-answer3" id="label-q4-answer3">Peter File</label>
+          <input type="radio" class="answers" name="question4" id="q4-answer4" value="incorrect"></input>
+          <label for="q4-answer4" id="label-q4-answer4">Hugh Jass</label>
     </div>
   </div>
-    <footer>
-    </footer>
-    <script src="index.js"></script>
+    <div class="question-wrapper">
+      <div class="question-wrapper">
+        <p class="questions" id="question5">How does Friendface work?</p>
+      </div>
+      <div class="answers-wrapper">
+          <input type="radio" class="answers" name="question5" id="q5-answer1" value="incorrect"></input>
+          <label for="q5-answer1" id="label-q5-answer1">Like birth control</label>
+          <input type="radio" class="answers" name="question5" id="q5-answer2" value="incorrect"></input> 
+          <label for="q5-answer2" id="label-q5-answer2">Like a dirty cop with nothing left to lose</label>
+          <input type="radio" class="answers" name="question5" id="q5-answer3" value="incorrect"></input>
+          <label for="q5-answer3" id="label-q5-answer3">Like that expensive face cream that's actually just mayonnaise</label>
+          <input type="radio" class="answers" name="question5" id="q5-answer4" value="correct"></input>
+          <label for="q5-answer4" id="label-q5-answer4">Like a cold or a terrible plague</label>
+      </div>
+    </div>
+    <div class="question-wrapper">
+      <div class="question-wrapper">
+        <p class="questions" id="question6">What does Roy call the fifth floor?</p>
+      </div>
+      <div class="answers-wrapper">
+          <input type="radio" class="answers" name="question6" id="q6-answer1" value="incorrect"></input>
+          <label for="q6-answer1" id="label-q6-answer1">A basket of deplorables</label>
+          <input type="radio" class="answers" name="question6" id="q6-answer2" value="incorrect"></input> 
+          <label for="q6-answer2" id="label-q6-answer2">The floor with good toilets</label>
+          <input type="radio" class="answers" name="question6" id="q6-answer3" value="correct"></input>
+          <label for="q6-answer3" id="label-q6-answer3">The land of beautiful people</label>
+          <input type="radio" class="answers" name="question6" id="q6-answer4" value="incorrect"></input>
+          <label for="q6-answer4" id="label-q6-answer4">The floor with all the wankers</label>
+      </div>
+    </div>
+    <div class="question-wrapper">
+      <div class="question-wrapper">
+        <p class="questions" id="question7">Why does Moss have to see the office psychiatrist?</p>
+      </div>
+      <div class="answers-wrapper">
+          <input type="radio" class="answers" name="question7" id="q7-answer1"></input>
+          <label for="q7-answer1" id="label-q7-answer1">Because he'd had enough of everything and wanted to go to the seaside</label>
+          <input type="radio" class="answers" name="question7" id="q7-answer2"></input> 
+          <label for="q7-answer2" id="label-q7-answer2">Because he pulled a gun in the park</label>
+          <input type="radio" class="answers" name="question7" id="q7-answer3"></input>
+          <label for="q7-answer3" id="label-q7-answer3">Because he said Jen was dead that one time</label>
+          <input type="radio" class="answers" name="question7" id="q7-answer4"></input>
+          <label for="q7-answer4" id="label-q7-answer4">Because he'd been feeling depressed because he was pregnant</label>
+      </div>
+    </div>
+    <div class="question-wrapper">
+      <div class="question-wrapper">
+        <p class="questions" id="question8">What festive item does Roy find unbearable?</p>
+      </div>
+      <div class="answers-wrapper">
+          <input type="radio" class="answers" name="question8" id="q8-answer1"></input>
+          <label for="q8-answer1" id="label-q8-answer1">Confetti</label>
+          <input type="radio" class="answers" name="question8" id="q8-answer2"></input> 
+          <label for="q8-answer2" id="label-q8-answer2">Balloons</label>
+          <input type="radio" class="answers" name="question8" id="q8-answer3"></input>
+          <label for="q8-answer3" id="label-q8-answer3">Cupcake icing</label>
+          <input type="radio" class="answers" name="question8" id="q8-answer4"></input>
+          <label for="q8-answer4" id="label-q8-answer4">Piñatas</label>
+      </div>
+    </div>
+    <div class="question-wrapper">
+      <div class="question-wrapper">
+        <p class="questions" id="question9">What movie did Derek quote at Denholm's funeral?</p>
+      </div>
+      <div class="answers-wrapper">
+        
+          <input type="radio" class="answers" name="question9" id="q9-answer1"></input>
+          <label for="q9-answer1" id="label-q9-answer1">Trainspotting</label>
+          <input type="radio" class="answers" name="question9" id="q9-answer2"></input> 
+          <label for="q9-answer2" id="label-q9-answer2">Four Weddings and a Funeral</label>
+          <input type="radio" class="answers" name="question9" id="q9-answer3"></input>
+          <label for="q9-answer3" id="label-q9-answer3">Pretty Woman</label>
+          <input type="radio" class="answers" name="question9" id="q9-answer4"></input>
+          <label for="q9-answer4" id="label-q9-answer4">The Full Monty</label>
+       
+      </div>
+    </div>
+
+    <div class="question-wrapper">
+      <div class="question-wrapper">
+        <p class="questions" id="question10">What would Moss have gone into if he hadn't ended up in computers?</p>
+      </div>
+      <div id="last-answers-wrapper">
+          <input type="radio" class="answers" name="question10" id="q10-answer1"></input>
+          <label for="q10-answer1" id="label-q10-answer1">Optometry</label>
+          <input type="radio" class="answers" name="question10" id="q10-answer2"></input> 
+          <label for="q10-answer2" id="label-q10-answer2">The theatre</label>
+          <input type="radio" class="answers" name="question10" id="q10-answer3"></input>
+          <label for="q10-answer3" id="label-q10-answer3">Espionage</label>
+          <input type="radio" class="answers" name="question10" id="q10-answer4"></input>
+          <label for="q10-answer4" id="label-q10-answer4">Porn</label>
+      </div>
+    </div>
+    </div>
+    <div id="check-answ-btn-wrapper"><button id="check-answer-button">check answers</button></div>
+    <div id="score-wrapper"><p id="score"></p></div>
+   
+    <script src="quiz.js"></script>
   </body>
+
 </html>
