@@ -1,6 +1,7 @@
-<img src="./the_it_crowd.jpeg">
+<img width="600px" src="./the_it_crowd.jpeg">
+
 # Practice Project: IT Crowd Quiz
-This is a simple practice project. My main goal with this project is practice using HTML, CSS and JavaScript.
+This is a simple practice project. My main goal with this project is practice using HTML, CSS and vanila JavaScript.
 
 ## The application
 
