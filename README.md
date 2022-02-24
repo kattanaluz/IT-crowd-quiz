@@ -2,6 +2,8 @@
 
 # Practice Project: IT Crowd Quiz
 This is a simple practice project. My main goal with this project is practice using HTML, CSS and vanila JavaScript.
+<br>
+You can check out the web page <a href="it-crowd-quiz.netlify.app/">here</a>.
 
 ## The application
 
